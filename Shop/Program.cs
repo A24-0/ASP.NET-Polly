@@ -57,7 +57,7 @@ app.MapGet("/sendmailwithresending", async (IEmailSender emailService, ILogger<P
         }
         catch (ConnectionException ex) when (currentAttept<attemptsLimit)
         {
-            _logger.LogWarning(ex, "������ ��� �������� ������: {Recipient}, {Subject}", "antysya@mail.ru", "�����������");
+            _logger.LogWarning(ex, "������ ��� �������� ������: {Recipient}, {Subject}", "desu99@bk.ru", "�����������");
             await Task.Delay(TimeSpan.FromSeconds(30));
         }
         catch(Exception ex)
